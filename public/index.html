@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- jquery cdn -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/chat.css" />
+    <!-- Socket io cdn -->
+    <script src="/socket.io/socket.io.js"></script>
+    <title>Chat App</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form class="chat">
+        <input
+          type="text"
+          data-role="writeMessage"
+          class="writeMessage"
+          placeholder="Write a message"
+        />
+        <input type="submit" class="sendBtn" value="Send" />
+      </form>
+    </div>
+  </body>
+  <script src="js/chat.js"></script>
+</html>
